@@ -1,2 +1,4 @@
 [core]
-    remote = origin
+    remote = localremote
+['remote "localremote"']
+    url = /Users/mariam/dvc-storage/mlops-lab-1
