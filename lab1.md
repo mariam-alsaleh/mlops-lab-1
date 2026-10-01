@@ -79,3 +79,16 @@ The DVC command needed to retrieve the dataset is:
 
 ```bash
 dvc pull
+```
+
+## Question 8
+
+After checking out the older Git commit and running:
+
+```bash
+dvc checkout
+```
+
+the newer folders food11_processed and food11_processed_mini were no longer present.
+This happened because Git restored the older version of data.dvc, and dvc checkout updated the actual data folder to match the dataset version referenced by that pointer.
+This demonstrates that Git versions the DVC metadata/pointers, while DVC versions the actual dataset.
